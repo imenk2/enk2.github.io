@@ -30,3 +30,23 @@ layout: default
     </li>
   {% endfor %}
 </ul>
+
+
+
+***
+
+<script src="https://giscus.app/client.js"
+        data-repo="imenk2/enk2"
+        data-repo-id="R_kgDOPuZCdQ"
+        data-category="Comments"
+        data-category-id="DIC_kwDOPuZCdc4CvgCE"
+        data-mapping="og:title"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>

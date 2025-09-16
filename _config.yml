@@ -3,7 +3,18 @@ logo: /assets/img/avata.png
 description: 这个人很懒什么也没留下……
 show_downloads: true
 google_analytics:
-theme: jekyll-theme-minimal
+theme: jekyll-theme-minimal   
 
 include:
   - "docs"
+
+
+comments:
+  active: giscus
+  giscus:
+    repo: imenk2/enk2
+    repo_id: R_kgDOPuZCdQ
+    category: Comments
+    category_id: DIC_kwDOPuZCdc4CvgCE
+    mapping: pathname
+ 
