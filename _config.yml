@@ -4,3 +4,6 @@ description: 这个人很懒什么也没留下……
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-minimal
+
+include:
+  - "docs"

@@ -2,7 +2,7 @@
 layout: default
 ---
 
-![Branching](../assets/img/text_mesh_pro/show.gif)
+![Branching](../../assets/img/text_mesh_pro/show.gif)
 
 TextMeshPro（TMP）是unity的一套UI文字方案，支持对顶点、颜色进行编辑，自定义强，可扩展等优点。
 
@@ -10,17 +10,17 @@ TextMeshPro（TMP）是unity的一套UI文字方案，支持对顶点、颜色�
 
 
 # 安装
-![Branching](../assets/img/text_mesh_pro/package.png)
+![Branching](../../assets/img/text_mesh_pro/package.png)
 
 组件分为两类
 
 
-![Branching](../assets/img/text_mesh_pro/menu1.png)
-![Branching](../assets/img/text_mesh_pro/menu2.png)
+![Branching](../../assets/img/text_mesh_pro/menu1.png)
+![Branching](../../assets/img/text_mesh_pro/menu2.png)
 
 # 关于中文字体文字生成
-![Branching](../assets/img/text_mesh_pro/tool1.png)
-![Branching](../assets/img/text_mesh_pro/tool2.png)
+![Branching](../../assets/img/text_mesh_pro/tool1.png)
+![Branching](../../assets/img/text_mesh_pro/tool2.png)
 
 [BMPFont](https://www.angelcode.com/products/bmfont/)
 位图按照内容命名依次导入文字位图，生成图集和.fnt字符信息
@@ -44,9 +44,9 @@ PS JS将图片按顺序分层排列，利用JS脚本导出每图层信息并组�
 
 ## 例
 Unity Sprite方式，需要读取位图信息和字符信息赋值到Font并保存
-![Branching](../assets/img/text_mesh_pro/code1.png)
-![Branching](../assets/img/text_mesh_pro/code2.png)
-![Branching](../assets/img/text_mesh_pro/tool3.png)
+![Branching](../../assets/img/text_mesh_pro/code1.png)
+![Branching](../../assets/img/text_mesh_pro/code2.png)
+![Branching](../../assets/img/text_mesh_pro/tool3.png)
 
 TMP 字体会生成SDF信息
 Font 文件需要characterInfo、material (Transparent)
@@ -57,38 +57,38 @@ Font 文件需要characterInfo、material (Transparent)
 
 我们也可以生成单独的字库文件追加到已有字库中
 
-![Branching](../assets/img/text_mesh_pro/menu3.png)
-![Branching](../assets/img/text_mesh_pro/tool4.png)
-![Branching](../assets/img/text_mesh_pro/tool5.png)
+![Branching](../../assets/img/text_mesh_pro/menu3.png)
+![Branching](../../assets/img/text_mesh_pro/tool4.png)
+![Branching](../../assets/img/text_mesh_pro/tool5.png)
 
 # 动画
 [参考](https://www.bilibili.com/video/BV15U4y117zP/?vd_source=16325a6476127ffe372818b0134c05b3)
 获取TMP_Text组件中的CharacterCount、verteices信息
 对每字符进行操作
 
-![Branching](../assets/img/text_mesh_pro/code3.png)
+![Branching](../../assets/img/text_mesh_pro/code3.png)
 
 vertexIndex是字符mesh第一个顶点，vertices是所有顶点数据
 
-![Branching](../assets/img/text_mesh_pro/code4.png)
+![Branching](../../assets/img/text_mesh_pro/code4.png)
 
 操作完对mesh刷新，传递到对应Renderer中
 
-![Branching](../assets/img/text_mesh_pro/code5.png)
+![Branching](../../assets/img/text_mesh_pro/code5.png)
 
 延迟更新
 
-![Branching](../assets/img/text_mesh_pro/code6.png)
+![Branching](../../assets/img/text_mesh_pro/code6.png)
 
 根据字符总数、延迟时间、单位时间计算出
 最大时长，在循环模式中对time取余（elapsedTime=deltaTime）
 
-![Branching](../assets/img/text_mesh_pro/code7.png)
-![Branching](../assets/img/text_mesh_pro/code8.png)
+![Branching](../../assets/img/text_mesh_pro/code7.png)
+![Branching](../../assets/img/text_mesh_pro/code8.png)
 
 根据字符index和当前计算的时间读取动画曲线（可省略）
 
-![Branching](../assets/img/text_mesh_pro/code9.png)
+![Branching](../../assets/img/text_mesh_pro/code9.png)
 
 [参考](https://github.com/coposuke/TextMeshProAnimator)
 
@@ -96,7 +96,7 @@ vertexIndex是字符mesh第一个顶点，vertices是所有顶点数据
 顺序为				
 左下、左上、右上、右下
 
-![Branching](../assets/img/text_mesh_pro/t_mesh.png)
+![Branching](../../assets/img/text_mesh_pro/t_mesh.png)
 
 根据需要对顶点进行逐顺序驱动，本篇的浮动效果比较简单，直接4个顶点同时赋值即可
 
@@ -106,11 +106,11 @@ DoTweenPro，对就是这么便捷
 # 补充
 shader实现浮动文字动画[链接](http://sketchhousegames.com/blog/2020/make-unity-text-animation-easy-with-shaders/)
 
-![Branching](../assets/img/text_mesh_pro/shader1.png)
+![Branching](../../assets/img/text_mesh_pro/shader1.png)
 
 ```c#
 float _AnimationVerts[16]
 ```
-![Branching](../assets/img/text_mesh_pro/code10.png)
+![Branching](../../assets/img/text_mesh_pro/code10.png)
 
-[back](../coding-page.html)
+[back](../../coding-page.html)

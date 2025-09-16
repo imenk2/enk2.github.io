@@ -2,7 +2,7 @@
 layout: default
 ---
 
-![Branching](../assets/img/ui_anti_aliasing/test1.gif)
+![Branching](../../assets/img/ui_anti_aliasing/test1.gif)
 
 这只是对四边形UI的简单抗锯齿实验
 思路是通过override Image里的OnPopulateMesh函数修改UI顶点，由4个改为5个（中心点）
@@ -183,4 +183,4 @@ Shader "Custom/UI/UIAA"
 
 ```
 
-[back](../coding-page.html)
+[back](../../coding-page.html)

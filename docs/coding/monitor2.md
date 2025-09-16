@@ -1,5 +1,9 @@
 ---
 layout: default
+
+title: 示波器 2
+date: 2022-12-29
+last_modified_at: 2022-12-29
 ---
 
 前篇我们对场景六基色色相和白平衡还有明度进行了验证，对黑白场做了微调。后面我们还需要对场景调光。
@@ -38,7 +42,7 @@ B（brightness）表示亮度
 
 图4    是曝光基础上，人为修色调曲线的结果，更接近电影色调曲线                    [参考链接](https://bartwronski.com/2016/08/29/localized-tonemapping/)
 
-![Branching](../assets/img/monitor/tonemapping.png)
+![Branching](../../assets/img/monitor/tonemapping.png)
 
 曝光信息表示了场景当前亮度分布，我们可以直观的看出，左1图例低调信息堆积，中间调和高调信息缺失，图3低调高调信息稍少，中间调信息丰富而画面呈灰，而图4中画面重要信息‘角色’曝光信息丰富，场景变化和谐。
 
@@ -46,7 +50,7 @@ B（brightness）表示亮度
 
 明暗+色相=影调
 
-![Branching](../assets/img/monitor/color_show1.png)
+![Branching](../../assets/img/monitor/color_show1.png)
 
 影调应尽早确立，这关乎整个游戏或关卡的风格
 
@@ -75,7 +79,7 @@ B（brightness）表示亮度
 
 ### 光比与影调
 
-![Branching](../assets/img/monitor/light_gray.png)
+![Branching](../../assets/img/monitor/light_gray.png)
 
 明面与暗面受光量差不多、亮度相近，光比就小，影调（或色调） 表现的反差也小，看来就觉得柔软（若运用不当，会觉得平淡）。 
 
@@ -86,15 +90,15 @@ B（brightness）表示亮度
 • 光比很小，影调以灰为主，缺乏必要的黑白反差，就流于严重偏 灰的不良影调
 
 
-![Branching](../assets/img/monitor/test_scene_gray.png)
+![Branching](../../assets/img/monitor/test_scene_gray.png)
 
-![Branching](../assets/img/monitor/test_scene_gray2.png)
+![Branching](../../assets/img/monitor/test_scene_gray2.png)
 
 我们可以使用经验光比来进行材质检查（人眼曝光中：测光板中性灰度是0.18，地板和球体的材质灰度实际是约等于RGB117）
 
 ## 配色
 
-![Branching](../assets/img/monitor/color_scene_test.png)
+![Branching](../../assets/img/monitor/color_scene_test.png)
 
 颜色可以影响感情，甚至身体上的感觉，色彩能够建立和谐或矛盾，并让我们关注主题。 尽管颜色运用是约定俗成的，但并不是一成不变，没有铁律。 
 
@@ -125,4 +129,4 @@ B（brightness）表示亮度
 [拾色色盘小工具推荐Adobe](https://color.adobe.com/zh/create/color-wheel)   
 
 
-[back](../coding-page.html)
+[back](../../coding-page.html)

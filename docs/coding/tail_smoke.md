@@ -8,10 +8,10 @@ layout: default
 >在Unity中粒子特效就可以制作飘烟拖尾，但是如果运动过快难免会有不自然的断开。虽然粒子中加入了Trail，但是我让拖尾转角圆滑比较困难（这方面还得请教特效同学）。当然如果对转角没有要求，粒子还是最简单的。
 
 粒子拖尾效果:
-![Branching](../assets/img/tail_smoke/test1.gif)
+![Branching](../../assets/img/tail_smoke/test1.gif)
 
 Line Renderer拖尾
-![Branching](../assets/img/tail_smoke/test2.gif)
+![Branching](../../assets/img/tail_smoke/test2.gif)
 
 我们在unity中创建gameobject，添加line renderer组件。
 
@@ -160,7 +160,7 @@ public class BezierPath
 
 ```
 到此line的跟随坐标路径做上升动画就完成了，想要添加其他动画可以在update中完成。
-![Branching](../assets/img/tail_smoke/lineRenderer.gif)
+![Branching](../../assets/img/tail_smoke/lineRenderer.gif)
 trail相比line 我们需要做的就简单多了。
 
 ```ruby
@@ -196,4 +196,4 @@ trail本身是可以在组件中设置更多参数的
 严格来说这只是拖尾，至于是不是烟雾还是要靠材质球表现了
 
 
-[back](../coding-page.html)
+[back](../../coding-page.html)

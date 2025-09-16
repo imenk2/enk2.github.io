@@ -58,7 +58,7 @@ public class TransparentMaterial : MonoBehaviour
     }
 ```
 
-![Branching](../assets/img/material_transparent_set/blend_mod.png)
+![Branching](../../assets/img/material_transparent_set/blend_mod.png)
 
 
-[back](../coding-page.html)
+[back](../../coding-page.html)

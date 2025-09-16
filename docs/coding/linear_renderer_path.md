@@ -7,27 +7,27 @@ layout: default
 点位计算有问题，请自行修改
 
 
-![Branching](../assets/img/linder_renderer_path/show.png)
+![Branching](../../assets/img/linder_renderer_path/show.png)
 
 
 起初想要通过[贝塞尔曲线](https://blog.csdn.net/u012154588/article/details/98977717)去平滑路径，但是很快便发现路径平滑后它不穿过中途点。
 
-| ![Branching](../assets/img/linder_renderer_path/bessel.gif) | ![Branching](../assets/img/linder_renderer_path/bessel2.gif) | ![Branching](../assets/img/linder_renderer_path/bessel3.gif) | ![Branching](../assets/img/linder_renderer_path/bessel4.gif) |
+| ![Branching](../../assets/img/linder_renderer_path/bessel.gif) | ![Branching](../../assets/img/linder_renderer_path/bessel2.gif) | ![Branching](../../assets/img/linder_renderer_path/bessel3.gif) | ![Branching](../../assets/img/linder_renderer_path/bessel4.gif) |
 
 那么就要更换平滑曲线方式，catmull-rom
 
-![Branching](../assets/img/linder_renderer_path/catmoll-rom.png)
+![Branching](../../assets/img/linder_renderer_path/catmoll-rom.png)
 
-![Branching](../assets/img/linder_renderer_path/catmoll-rom-info.png)
+![Branching](../../assets/img/linder_renderer_path/catmoll-rom-info.png)
 
 由最少4个点进行差值计算，差值结果在p1-p2之间
 
 曲柄是由P'(0) = τ(P<sub>i</sub> - P<sub>i-2</sub>), P'(1) = τ(P<sub>i + 1</sub> - P<sub>i - 1</sub>)
-![Branching](../assets/img/linder_renderer_path/catmoll-rom-info2.png)
-![Branching](../assets/img/linder_renderer_path/catmoll-rom-info3.png)
-![Branching](../assets/img/linder_renderer_path/catmoll-rom-info4.png)
-![Branching](../assets/img/linder_renderer_path/catmoll-rom-info5.png)
-![Branching](../assets/img/linder_renderer_path/catmoll-rom-info6.png)
+![Branching](../../assets/img/linder_renderer_path/catmoll-rom-info2.png)
+![Branching](../../assets/img/linder_renderer_path/catmoll-rom-info3.png)
+![Branching](../../assets/img/linder_renderer_path/catmoll-rom-info4.png)
+![Branching](../../assets/img/linder_renderer_path/catmoll-rom-info5.png)
+![Branching](../../assets/img/linder_renderer_path/catmoll-rom-info6.png)
 
 
 这张图解释了不选用默认样条的原因
@@ -206,4 +206,4 @@ private void SetPath()
 
 
 
-[back](../coding-page.html)
+[back](../../../../coding-page.html)

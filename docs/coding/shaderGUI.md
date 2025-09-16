@@ -38,7 +38,7 @@ public class TestGUI : ShaderGUI
 
 }
 ```
-![Branching](../assets/img/shaderGUI/GUIOpen.png)
+![Branching](../../assets/img/shaderGUI/GUIOpen.png)
 
 *我们开启自定义UI显示以后，默认UI将会失效。*  
 <br><br><br>
@@ -52,7 +52,7 @@ MaterialProperty _CubeMap= FindProperty(“_CubeMap”, materialProperties, true
 GUIContent content = new GUIContent(_CubeMap.displayName, _CubeMap.textureValue, “cube Map”);//tips 是说明文字，鼠标悬停属性名称时显示
 materialEditor.TexturePropertySingleLine(content, _CubeMap);
 ```
-![Branching](../assets/img/shaderGUI/single_texture.png)
+![Branching](../../assets/img/shaderGUI/single_texture.png)
 
 添加调色给这张图,在原有属性下方查找到颜色，GUI容器还是使用cubemap的,这时color就会出现在cubemap之后单行显示。
 
@@ -68,7 +68,7 @@ materialEditor.TextureScaleOffsetProperty(_CubeMap);
 EditorGUI.indentLevel--;
 //偏移后须将头部位置归位，即便在属性列表末端也需要。
 ```
-![Branching](../assets/img/shaderGUI/single_texture_color.png)
+![Branching](../../assets/img/shaderGUI/single_texture_color.png)
 ## 法线单行显示，无贴图隐藏滑竿
 
 ```c#
@@ -89,8 +89,8 @@ Return content;
 }
 
 ```
-![Branching](../assets/img/shaderGUI/normal.png)
-![Branching](../assets/img/shaderGUI/normal_slider.png)
+![Branching](../../assets/img/shaderGUI/normal.png)
+![Branching](../../assets/img/shaderGUI/normal_slider.png)
 ## 贴图特殊设置提示
 
 在默认attribute中我们使用法线贴图时会提示我们当前传入图片是否是法线，我们可以借鉴这一功能定义我们自己需要设置的内容作为提示显示出来。
@@ -114,8 +114,8 @@ if(setClamp){
     textureImporter.SaveAndReimport();
 }
 ```
-![Branching](../assets/img/shaderGUI/texture_wrap.gif)
-![Branching](../assets/img/shaderGUI/texture_wrap_set.gif)
+![Branching](../../assets/img/shaderGUI/texture_wrap.gif)
+![Branching](../../assets/img/shaderGUI/texture_wrap_set.gif)
 贴图其他涉及到非TextureImport的则不适用
 
 ## UI界面变更检查
@@ -143,8 +143,8 @@ If(EditorGUI.EndChangeCheck())//有修改返回ture
 }
 
 ```
-![Branching](../assets/img/shaderGUI/keyword_change_ui.png)
-![Branching](../assets/img/shaderGUI/keyword_change_ui2.png)
+![Branching](../../assets/img/shaderGUI/keyword_change_ui.png)
+![Branching](../../assets/img/shaderGUI/keyword_change_ui2.png)
 ```C#
 //也可以根据debug来查看keyword是否成功
 targetMat.IsKeywordEnabled(string)
@@ -194,13 +194,13 @@ if (EditorGUI.EndChangeCheck()) {
         SetKeyWorld(LC);	
 }
 ```
-![Branching](../assets/img/shaderGUI/keyword_change_ui3.png)
-![Branching](../assets/img/shaderGUI/keyword_change_ui4.png)
+![Branching](../../assets/img/shaderGUI/keyword_change_ui3.png)
+![Branching](../../assets/img/shaderGUI/keyword_change_ui4.png)
 
 
 因为我们设置了分支关键字，shader内会根据关键字走相应流程。我们可以将不被使用的流程属性隐藏。
-![Branching](../assets/img/shaderGUI/keyword_change_ui5.gif)
-![Branching](../assets/img/shaderGUI/keyword_change_ui6.gif)
+![Branching](../../assets/img/shaderGUI/keyword_change_ui5.gif)
+![Branching](../../assets/img/shaderGUI/keyword_change_ui6.gif)
 
 ## 折叠组
 
@@ -214,7 +214,7 @@ if (isFoldut)
 }
 EditorGUILayout.EndFoldoutHeaderGroup();
 ```
-![Branching](../assets/img/shaderGUI/keyword_change_ui7.gif)
+![Branching](../../assets/img/shaderGUI/keyword_change_ui7.gif)
 
 ## 可调节min max的滑动条
 
@@ -225,14 +225,14 @@ EditorGUILayout.EndFoldoutHeaderGroup();
 ```c#
 EditorGUILayout.MinMaxSlider(ref minVal, ref maxVal, minLimit, maxLimit);
 ```
-![Branching](../assets/img/shaderGUI/keyword_change_ui8.gif)
+![Branching](../../assets/img/shaderGUI/keyword_change_ui8.gif)
 
 ## 控件容器 Rect
 
 在界面中每一个控件都可以定制长宽。x，y  0点在左上角
 
-![Branching](../assets/img/shaderGUI/rect1.png)
-![Branching](../assets/img/shaderGUI/rect2.png)
+![Branching](../../assets/img/shaderGUI/rect1.png)
+![Branching](../../assets/img/shaderGUI/rect2.png)
 
 
 如果我们手动设置rect，那样以后排板将会很痛苦。
@@ -256,7 +256,7 @@ slider =  EditorGUILayout.Slider(slider, 0, 1);
 GUI.backgroundColor =  Color.green;
 GUILayout.Box(new GUIContent(), GUILayout.Width(slider*e.width));
 ```
-![Branching](../assets/img/shaderGUI/ui__change1.gif)
+![Branching](../../assets/img/shaderGUI/ui__change1.gif)
 
 
 最后是可用控件doc
@@ -265,4 +265,4 @@ https://docs.unity3d.com/cn/2019.4/ScriptReference/EditorGUI.html
 
 
 
-[back](../coding-page.html)
+[back](../../coding-page.html)
