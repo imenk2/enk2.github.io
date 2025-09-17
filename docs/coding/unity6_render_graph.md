@@ -9,7 +9,8 @@ last_modified_at: 2025-09-16
 # Render Graph
 ***
 
-|![Branching](../../assets/img/render_graph/image.png)|![Branching](../../assets/img/render_graph/image2.png)|
+|[![Branching](../../assets/img/render_graph/image.png)](../../assets/img/render_graph/image.png){:target="_blank" rel="noopener noreferrer"}|[![Branching](../../assets/img/render_graph/image2.png)](../../assets/img/render_graph/image2.png){:target="_blank" rel="noopener noreferrer"}|
+
 
 ## RenderGraph
 >入口
@@ -136,6 +137,8 @@ TextureHandle underWaterMask = renderGraph.ImportTexture(m_Settings.m_UnderWater
 ```
 
 |![Branching](../../assets/img/render_graph/image3.png)|![Branching](../../assets/img/render_graph/image4.png)|
+
+
 
 如果希望renderList在循环内每次绘制不同物体，那么RenderList要创建对应RendererListParams
 可以使用LayerMask，RenderingLayerMask来筛选物体，建议后者，因为LayerMask可能很紧张

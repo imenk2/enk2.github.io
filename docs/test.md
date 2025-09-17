@@ -122,6 +122,9 @@ The final element.
 
 _yay_
 
-
+//可点开放大的图片1
+{% include image-lightbox.html url="/assets/img/render_graph/image3.png" title="core sample" %}
+//可点开放大的图片2
+[![Branching](../../assets/img/render_graph/image3.png)](../../assets/img/render_graph/image3.png){:target="_blank" rel="noopener noreferrer"}
 
 [back](../coding-page.html)
