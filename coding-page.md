@@ -6,6 +6,8 @@ layout: default
 
 *** 
 
+[2025/09/25 Untiy 卡通脸部阴影学习](./docs/coding/anime_face_shadow.html)
+
 [2025/09/16 Untiy RenderGraph](./docs/coding/unity6_render_graph.html)
 
 [2025/09/16 Untiy 吃水线](./docs/coding/water_line.html)
@@ -37,5 +39,7 @@ layout: default
 [2020/10/14 Max 顶点动画烘焙到图](./docs/coding/vertex_animation_baked_to_texture_max.html)
 
 [2020/04/05 Unity 拖尾烟雾](./docs/coding/tail_smoke.html)
+
+***
 
 [back](./)
