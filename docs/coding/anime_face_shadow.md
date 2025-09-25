@@ -15,8 +15,12 @@ layout: default
 基于平滑法线的360°脸部阴影，脸上有固定阴影mask
 
 ## 基于多向sdf的脸部阴影形式
+
 ![Branching](../../assets/img/anime_face_shadow/GIF 2025-9-23 10-58-39.gif)
+
 [链接](https://zhuanlan.zhihu.com/p/670837192)
+
+
 使用65张朝向的sdf 序列，根据灯光角度采样4张融合结果
 
 ## 伪360 模型法线
